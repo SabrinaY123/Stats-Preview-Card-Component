@@ -1,0 +1,58 @@
+
+/* Main Page */
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 2% auto;
+    width: 350px;
+}
+
+/* Image Element */
+picture {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    border-radius: 3% 3% 0 0;
+    max-width: 350px;
+    position: relative;
+    z-index: -1;
+}
+
+.layer {
+    border-radius: 3% 3% 0 0;
+    position: absolute;
+    width:350px;
+    height: 257px;
+    opacity: 0.6;
+    background-color: hsl(277, 64%, 61%);
+}
+
+/* Description */
+.description {
+    background-color:hsl(244, 38%, 16%);
+    color:#fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    text-align: center;
+    padding: 5% 10%;
+}
+
+.description p {
+    line-height: 1.5;
+}
+
+
+
+/* Attribution */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
