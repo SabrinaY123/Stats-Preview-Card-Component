@@ -44,15 +44,50 @@ img {
     flex-wrap: wrap;
     justify-content:space-around;
     text-align: center;
-    padding: 5% 10%;
+    padding: 5% 7%;
+    font-family: 'Inter' , sans-serif;
+}
+
+.description span {
+    color: hsl(277, 64%, 61%);
 }
 
 .description p {
-    line-height: 1.5;
+    margin:0 5%;
+    line-height: 2;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: 'Lexend Deca', serif;
+    font-weight: 300;
+}
+
+.statitics-card {
+    margin:40px;
+}
+
+.statistics h2 {
+    margin: 0;
+    font-weight: 700;
+}
+
+.statistics p {
+    color:hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
 }
 
 
-
 /* Attribution */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    margin: 100px 0 20px 0;
+    font-size: 15px; 
+    text-align: center;
+    color: #fff;
+    font-family: 'Lexend Deca', serif;
+}
+
+.attribution a { 
+    color: hsl(277, 64%, 61%); 
+}
