@@ -40,6 +40,7 @@ img {
 .description {
     background-color:hsl(244, 38%, 16%);
     color:#fff;
+    height: 520px;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
@@ -53,6 +54,10 @@ img {
     color: hsl(277, 64%, 61%);
 }
 
+.description h1 {
+    margin:20px 0 0 0;
+}
+
 .description p {
     margin:0 5%;
     line-height: 2;
@@ -62,8 +67,11 @@ img {
     font-weight: 300;
 }
 
-.statitics-card {
-    margin:40px;
+.statistics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:200px;
 }
 
 .statistics h2 {
@@ -95,7 +103,60 @@ img {
 
 
 /* Media Queries */
-@media (min-width:800px) {
+@media (min-width:600px) and (max-width:1000px) {
+    main {
+        flex-direction:row-reverse;
+        width: max-content;
+        flex-wrap: wrap;
+        height: 26em;
+    }
+
+    img {
+        max-width: 20rem;
+        flex-wrap: wrap;
+        height: 26rem;
+        border-radius: 0 2% 2% 0;
+    }
+
+    .layer {
+        width: 20rem;
+        height: 26rem;
+        border-radius: 0 2% 2% 0;
+    }
+
+    .description {
+        max-width: 19em;
+        height: 22.5rem;
+        text-align: left;
+        padding: 2em;
+        justify-content: left;
+        align-content: space-between;
+        border-radius: 2% 0 0 2%;
+        font-size: 90%;
+    }
+    
+    .description p {
+        font-size: 90%;
+        margin: 0;
+    }
+
+    .statistics {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: fit-content;
+        justify-content: space-between;
+        width: 250px;
+    }
+
+    .statitics-card {
+        margin:0;
+    }
+
+}
+
+
+@media (min-width:1000px) {
     main {
         flex-direction:row-reverse;
         width: max-content;
@@ -117,17 +178,18 @@ img {
     }
 
     .description {
-        max-width: 24em;
+        max-width: 24rem;
+        height:20rem;
         text-align: left;
-        padding: 4em;
-        justify-content: left;
+        padding: 3em;
+        justify-content: space-between;
         align-content: space-between;
         border-radius: 2% 0 0 2%;
     }
 
     .description h1 {
         margin: 0;
-        font-weight: 600;
+        font-weight: 700;
     }
 
     .description p {
@@ -141,8 +203,7 @@ img {
         flex-wrap: wrap;
         justify-content: space-between;
         width: 340px;
-        height:90px;
-        align-content: flex-end;
+        height:70px;
     }
 
     .statitics-card {
@@ -153,7 +214,7 @@ img {
         font-size: 20px;
         font-weight: 700;
     }
-    
+
     .statistics p {
         font-size: 12px;
         letter-spacing: 1px;
